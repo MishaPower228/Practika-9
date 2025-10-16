@@ -26,10 +26,11 @@ def main():
         t = float(input("Введіть температуру, °C: ").strip())
         h = float(input("Введіть вологість, %: ").strip())
     except ValueError:
-        print("Помилка вводу: введіть числа (наприклад, 22.5 і 45).")
+        print("Помилка вводу: введіть числа")
         return
 
     print(comfort_advice(t, h))
 
 if __name__ == "__main__":
     main()
+
